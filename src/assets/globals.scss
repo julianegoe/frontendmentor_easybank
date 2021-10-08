@@ -1,0 +1,128 @@
+/* Font Face */
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;700&display=swap');
+
+@font-face {
+	src: local('Public Sans');
+	font-family: 'Public Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.12rem;
+}
+
+/* Font Size */
+
+$font-size-default: 1.12rem;
+$font-size-small: 0.75rem;
+
+/* Primary Colors */
+
+$color-dark-blue: hsl(233, 26%, 24%);
+$color-lime-green: hsl(136, 65%, 51%);
+$color-bright-cyan: hsl(192, 70%, 51%);
+
+$color-greyish-blue: hsl(233, 8%, 62%);
+$color-light-greyish-blue: hsl(220, 16%, 96%);
+$color-very-light-grey: hsl(0, 0%, 98%);
+$color-white: hsl(0, 0%, 100%);
+
+/* Breakpoints */
+
+$breakpoint-small: 'max-width: 40rem';
+
+/* Widths and Heights */
+
+$space-xxs: 0.25rem;
+$space-xs: 0.5rem;
+$space-s: 0.75rem;
+$space-m: 1rem;
+$space-l: 1.5rem;
+$space-xl: 2rem;
+$space-xxl: 6rem;
+
+/* Font Weight */
+
+$font-weight-regular: 300;
+$font-weight-semibold: 400;
+$font-weight-bold: 700;
+
+/* Font Sizes */
+
+$font-size-regular: 1.12rem;
+$font-size-large: 2.5rem;
+
+/* Line Height */
+
+$line-height-paragraph: 1.6rem;
+
+
+/* Borderradius */
+
+$border-radius-pill: 999px;
+$border-radius-circle: 50%;
+$border-radius-box: 5px;
+
+/* Z-indices */
+
+$z-index-nav: 100;
+
+html {
+	font-family: 'Public Sans', sans-serif;
+}
+
+/* Default Elements */
+
+$btn-gradient: linear-gradient(45deg, $color-lime-green, $color-bright-cyan);
+
+button {
+	border: none;
+	padding: 1rem 2.5rem 1rem 2.5rem;
+	background-image: $btn-gradient;
+	color: $color-white;
+	border-radius: $border-radius-pill;
+	cursor: pointer;
+}
+
+h1 {
+	font-weight: 200;
+	color: $color-dark-blue;
+	font-size: $font-size-large;
+}
+
+h2 {
+	font-weight: $font-weight-semibold;
+}
+
+h3 {
+	font-weight: $font-weight-semibold;
+}
+
+p {
+	font-weight: $font-weight-regular;
+	color: $color-greyish-blue;
+	margin: 0 0 $space-xl 0;
+}
+
+/* Mixins */
+
+@mixin horizontal-nav() {
+	display: inline;
+	list-style: none;
+	cursor: pointer;
+	margin-left: $space-m;
+}
+
+@mixin vertical-nav($margin) {
+	list-style: none;
+	cursor: pointer;
+	margin-bottom: $margin;
+	text-align: center;
+}
+
+@mixin background($imgpath,$position:0 0, $size: auto, $repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+		size: $size;
+    }
+}
