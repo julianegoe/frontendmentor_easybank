@@ -1,5 +1,5 @@
 <template>
-    <img class="hero-image" src="../assets/image-mockups.png" alt="iPhones"/>
+    <img src="../assets/image-mockups.png" alt="iPhones"/>
 </template>
 
 <script>
@@ -15,12 +15,14 @@ export default {
 @use '../assets/globals.scss' as *;
 
 .hero-image {
+    z-index: $z-index-hero;
     width: 50%;
     object-fit: cover;
 
     @media ($breakpoint-small) {
         width: 100%;
         order: 1;
+        /* transform: translateY(-150px); */
     }
 }
 

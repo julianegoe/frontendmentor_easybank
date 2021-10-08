@@ -24,7 +24,6 @@ export default {
     right: 0;
     bottom: 0;
     box-sizing: border-box;
-    margin: $space-m;
     display: flex;
     flex-direction: column;
 }

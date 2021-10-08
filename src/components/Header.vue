@@ -42,7 +42,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: $space-xxl;
+    max-height: $space-xxl;
     background: $color-white;
     z-index: $z-index-nav;
 

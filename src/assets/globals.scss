@@ -27,7 +27,7 @@ $color-white: hsl(0, 0%, 100%);
 
 /* Breakpoints */
 
-$breakpoint-small: 'max-width: 40rem';
+$breakpoint-small: 'max-width: 60rem';
 
 /* Widths and Heights */
 
@@ -48,6 +48,7 @@ $font-weight-bold: 700;
 /* Font Sizes */
 
 $font-size-regular: 1.12rem;
+$font-size-medium: 2rem;
 $font-size-large: 2.5rem;
 
 /* Line Height */
@@ -63,7 +64,8 @@ $border-radius-box: 5px;
 
 /* Z-indices */
 
-$z-index-nav: 100;
+$z-index-nav: 200;
+$z-index-hero: 100;
 
 html {
 	font-family: 'Public Sans', sans-serif;
@@ -89,11 +91,14 @@ h1 {
 }
 
 h2 {
-	font-weight: $font-weight-semibold;
+	font-weight: 200;
+	color: $color-dark-blue;
+	font-size: $font-size-medium;
 }
 
 h3 {
-	font-weight: $font-weight-semibold;
+	font-weight: 200;
+	color: $color-dark-blue;
 }
 
 p {

@@ -26,7 +26,7 @@ export default {
     justify-content: center;
     padding: 0 $space-xxl 0 $space-xxl;
 
-    > h1{
+    > h1 {
         text-align: left;
     }
 
