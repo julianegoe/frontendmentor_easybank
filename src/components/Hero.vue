@@ -15,10 +15,11 @@ export default {
 @use '../assets/globals.scss' as *;
 
 .hero-image {
-    position: relative;
+    position: absolute;
+    top: -$space-l;
+    right: -$space-xxl;
     width: 50%;
     object-fit: contain;
-    left: 10%;
 
     @media ($breakpoint-small) {
         width: 100%;

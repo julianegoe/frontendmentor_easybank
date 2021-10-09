@@ -20,6 +20,9 @@ export default {
 @use '../assets/globals.scss' as *;
 
 .hero-content {
+    grid-column: 1 / span 1;
+    width: 100%;
+    height: 35rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

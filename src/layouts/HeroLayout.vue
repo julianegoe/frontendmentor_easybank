@@ -1,7 +1,6 @@
 <template>
     <div class="hero-container">
         <slot name="hero-content"></slot>
-        <slot name="hero-image"></slot>
     </div>
 </template>
 
@@ -18,10 +17,8 @@ export default {
 @use '../assets/globals.scss' as *;
 
 .hero-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 30% 70%;
     padding: $space-m;
 
     @media ($breakpoint-small) {

@@ -2,9 +2,9 @@
   <Header></Header>
   <Layout>
     <!-- <mobile-nav class="mobile-nav__position"></mobile-nav> -->
+    <Hero class="hero-image"></Hero>
     <hero-layout>
       <template v-slot:hero-content><hero-content></hero-content></template>
-      <template v-slot:hero-image><Hero class="hero-image"></Hero></template>
     </hero-layout>
     <about-layout>
   <about-item icon="icon-online" aboutHeadline="Online Banking">
