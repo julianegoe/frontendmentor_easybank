@@ -33,21 +33,21 @@
     </blog-article>
 
     <blog-article
-    name="currency" author="Claire Robinson" headline="Receive money in any currency with no fees">
-      The world is getting smaller and we’re becoming more mobile.
-      So why should you be forced to only receive money in a single …
+    name="restaurant" author="Wilson Hutton" headline="Treat yourself without worrying about money">
+      Our simple budgeting feature allows you to separate out
+      your spending and set realistic limits each month. That means you …
     </blog-article>
 
     <blog-article
-    name="currency" author="Claire Robinson" headline="Receive money in any currency with no fees">
-      The world is getting smaller and we’re becoming more mobile.
-      So why should you be forced to only receive money in a single …
+    name="plane" author="Wilson Hutton" headline="Take your Easybank card wherever you go">
+      We want you to enjoy your travels.
+      This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …
     </blog-article>
 
     <blog-article
-    name="currency" author="Claire Robinson" headline="Receive money in any currency with no fees">
-      The world is getting smaller and we’re becoming more mobile.
-      So why should you be forced to only receive money in a single …
+    name="confetti" author="Claire Robinson" headline="Our invite-only Beta accounts are now live!">
+      After a lot of hard work by the whole team, we’re excited to launch our closed beta.
+      It’s easy to request an invite through the site ...
     </blog-article>
   </blog-layout>
   <Footer></Footer>

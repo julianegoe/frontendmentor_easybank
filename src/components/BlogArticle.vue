@@ -38,8 +38,22 @@ export default {
 
 .article-image {
     width: 100%;
+    aspect-ratio: 3 / 2;
     height: auto;
     object-fit: cover;
+}
+
+.article-preview {
+    padding: $space-l $space-l 0 $space-l;
+
+    div {
+        font-size: $font-size-small;
+        color: $color-greyish-blue;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
 }
 
 </style>
