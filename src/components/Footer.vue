@@ -39,8 +39,7 @@ export default {
   padding: $space-l $space-xxl $space-l $space-xxl;
   color: $color-very-light-grey;
   background: $color-dark-blue;
-  display: flex;
-  flex-direction: row;
+  display: grid;
 
   .footer-socialmedia {
     display: flex;
