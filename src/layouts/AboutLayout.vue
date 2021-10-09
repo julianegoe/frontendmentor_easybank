@@ -29,18 +29,31 @@ export default {
  background: $color-light-greyish-blue;
 
  @media ($breakpoint-small) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: 1fr;
+  padding: $space-m $space-xl $space-m $space-xl;
  }
 
  .about-headline {
      grid-column: 1 / span 4;
      grid-row: 1 / span 1;
 
+     @media ($breakpoint-small) {
+         grid-column: span 1;
+         grid-row: auto;
+     }
+
      > p {
          width: 60%;
+
+         @media ($breakpoint-small) {
+             width: 100%;
+             text-align: center;
+         }
+     }
+     > h2 {
+         @media ($breakpoint-small) {
+             text-align: center;
+         }
      }
  }
 }

@@ -1,5 +1,6 @@
 <template>
     <div class="hero-container">
+        <slot name="hero-image"></slot>
         <slot name="hero-content"></slot>
     </div>
 </template>
@@ -19,11 +20,9 @@ export default {
 .hero-container {
     display: grid;
     grid-template-columns: 30% 70%;
-    padding: $space-m;
 
     @media ($breakpoint-small) {
-        flex-direction: column;
-        position: absolute;
+        grid-template-columns: 1fr;
     }
 }
 

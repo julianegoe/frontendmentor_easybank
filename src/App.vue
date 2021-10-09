@@ -2,8 +2,9 @@
   <Header></Header>
   <Layout>
     <!-- <mobile-nav class="mobile-nav__position"></mobile-nav> -->
-    <Hero class="hero-image"></Hero>
+    <Hero class="hero-image desktop"></Hero>
     <hero-layout>
+      <template v-slot:hero-image><Hero class="hero-image smartphone"></Hero></template>
       <template v-slot:hero-content><hero-content></hero-content></template>
     </hero-layout>
     <about-layout>
@@ -24,6 +25,32 @@
    Tracking your money has never been easier.
   </about-item>
     </about-layout>
+  <blog-layout>
+    <blog-article
+    name="currency" author="Claire Robinson" headline="Receive money in any currency with no fees">
+      The world is getting smaller and we’re becoming more mobile.
+      So why should you be forced to only receive money in a single …
+    </blog-article>
+
+    <blog-article
+    name="currency" author="Claire Robinson" headline="Receive money in any currency with no fees">
+      The world is getting smaller and we’re becoming more mobile.
+      So why should you be forced to only receive money in a single …
+    </blog-article>
+
+    <blog-article
+    name="currency" author="Claire Robinson" headline="Receive money in any currency with no fees">
+      The world is getting smaller and we’re becoming more mobile.
+      So why should you be forced to only receive money in a single …
+    </blog-article>
+
+    <blog-article
+    name="currency" author="Claire Robinson" headline="Receive money in any currency with no fees">
+      The world is getting smaller and we’re becoming more mobile.
+      So why should you be forced to only receive money in a single …
+    </blog-article>
+  </blog-layout>
+  <Footer></Footer>
   </Layout>
 </template>
 
@@ -36,6 +63,9 @@ import HeroContent from '@/components/HeroContent.vue';
 import HeroLayout from '@/layouts/HeroLayout.vue';
 import AboutLayout from '@/layouts/AboutLayout.vue';
 import AboutItem from '@/components/AboutItem.vue';
+import BlogLayout from '@/layouts/BlogLayout.vue';
+import BlogArticle from '@/components/BlogArticle.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
@@ -47,6 +77,9 @@ export default {
     HeroLayout,
     AboutLayout,
     AboutItem,
+    BlogLayout,
+    BlogArticle,
+    Footer,
   },
 };
 </script>
@@ -60,7 +93,21 @@ body {
   background-color: $color-very-light-grey;
 
   @media ($breakpoint-small) {
-    @include background('./assets/bg-intro-mobile.svg', top right, contain);
+    @include background('./assets/bg-intro-mobile.svg', top center, cover);
+  }
+}
+
+.hero-image.smartphone {
+  display: none;
+}
+
+@media ($breakpoint-small) {
+  .hero-image.smartphone {
+    display: initial;
+  }
+
+  .hero-image.desktop {
+    display: none;
   }
 }
 

@@ -1,5 +1,5 @@
 <template>
-    <img src="../assets/image-mockups.png" alt="iPhones"/>
+    <img class="hero-image" src="../assets/image-mockups.png" alt="iPhones"/>
 </template>
 
 <script>
@@ -22,8 +22,9 @@ export default {
     object-fit: contain;
 
     @media ($breakpoint-small) {
+        position: inherit;
         width: 100%;
-        order: 1;
+        object-fit: cover;
     }
 }
 

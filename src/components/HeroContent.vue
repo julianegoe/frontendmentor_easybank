@@ -28,6 +28,7 @@ export default {
     align-items: flex-start;
     justify-content: center;
     padding: 0 $space-xxl 0 $space-xxl;
+    background: $color-very-light-grey;
 
     > h1 {
         text-align: left;
@@ -40,12 +41,17 @@ export default {
     }
 
     @media ($breakpoint-small) {
-        order: 2;
+        height: auto;
+        padding: 0 0 $space-xxl 0;
         align-items: center;
-        padding: $space-s;
+        justify-content: flex-start;
 
         > h1 {
             text-align: center;
+        }
+
+        > p {
+            padding: 0 $space-xl 0 $space-xl;
         }
     }
 }

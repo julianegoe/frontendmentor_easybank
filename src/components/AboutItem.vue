@@ -34,5 +34,11 @@ export default {
     > .about-icon {
         margin-bottom: $space-m;
     }
+
+  @media ($breakpoint-small) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 </style>
