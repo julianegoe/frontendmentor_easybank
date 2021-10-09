@@ -15,14 +15,14 @@ export default {
 @use '../assets/globals.scss' as *;
 
 .hero-image {
-    z-index: $z-index-hero;
+    position: relative;
     width: 50%;
-    object-fit: cover;
+    object-fit: contain;
+    left: 10%;
 
     @media ($breakpoint-small) {
         width: 100%;
         order: 1;
-        /* transform: translateY(-150px); */
     }
 }
 

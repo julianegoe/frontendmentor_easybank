@@ -54,13 +54,19 @@ export default {
 <style lang="scss">
 @use './assets/globals.scss' as *;
 
+body {
+  @include background('./assets/bg-intro-desktop.svg', 150% 15%, 70%);
+  background-blend-mode: normal;
+  background-color: $color-very-light-grey;
+
+  @media ($breakpoint-small) {
+    @include background('./assets/bg-intro-mobile.svg', top right, contain);
+  }
+}
+
 .mobile-nav__position {
   position: relative;
   top: $space-xxl;
-}
-
-.about-headline {
-  flex-basis: 100%;
 }
 
 </style>
