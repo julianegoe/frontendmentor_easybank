@@ -18,8 +18,8 @@ export default {
     position: absolute;
     top: -$space-l;
     right: -$space-xxl;
-    width: 50%;
-    object-fit: contain;
+    max-width: 50%;
+    object-fit: scale-down;
 
     @media ($breakpoint-small) {
         position: inherit;

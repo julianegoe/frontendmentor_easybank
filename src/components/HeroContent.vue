@@ -22,7 +22,7 @@ export default {
 .hero-content {
     grid-column: 1 / span 1;
     width: 100%;
-    height: 35rem;
+    min-height: 40rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
